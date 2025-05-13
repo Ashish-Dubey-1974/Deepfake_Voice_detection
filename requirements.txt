@@ -9,3 +9,4 @@ pydub>=0.25.1
 fastapi>=0.68.0
 uvicorn>=0.15.0
 python-multipart
+gunicorn>=20.1.0
