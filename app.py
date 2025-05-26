@@ -7,6 +7,8 @@ import soundfile as sf
 from transformers import Wav2Vec2FeatureExtractor, Wav2Vec2ForSequenceClassification
 from pydub import AudioSegment
 import tempfile
+import matplotlib
+matplotlib.use('Agg')
 
 # Constants
 MODEL_ID = "MelodyMachine/Deepfake-audio-detection-V2"
@@ -221,4 +223,4 @@ def create_interface():
 
 if __name__ == "__main__":
     interface = create_interface()
-    interface.launch(share=True)
+    interface.launch()
